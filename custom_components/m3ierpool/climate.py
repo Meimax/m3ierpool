@@ -8,7 +8,7 @@ import time
 import voluptuous as vol
 
 # Import the device class from the component that you want to support
-from config.custom_components.m3ierpool.api import Api
+from .api import Api
 from homeassistant.components.climate import (
     PLATFORM_SCHEMA as CLIMATE_PLATFORM_SCHEMA,
     ClimateEntity,
