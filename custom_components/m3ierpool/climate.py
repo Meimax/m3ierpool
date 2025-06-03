@@ -69,6 +69,7 @@ class PoolClimate(ClimateEntity):
         self._attr_hvac_modes = [HVACMode.HEAT]
         self._attr_hvac_mode = HVACMode.HEAT
         self._attr_name = "Pool Heizung"
+        self._attr_target_temperature_step = 0.1
 
     def update(self) -> None:
         """Fetch new state data.
