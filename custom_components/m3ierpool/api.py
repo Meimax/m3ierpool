@@ -61,7 +61,7 @@ class Api:
         r = requests.get(
             f"http://192.168.178.59/modify?0110={target_temperature}&x=36&y=32",
             timeout=10,
-            allow_redirects=False,
+            allow_redirects=True,
         )
         if "login.htm" in r.text:
             self.authenticate()
